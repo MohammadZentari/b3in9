@@ -995,17 +995,23 @@ Banner Style
   overflow: hidden;
 }
 
+.main-banner {
+  position: relative;
+  z-index: 2;
+}
+
 .main-banner:after {
   content: '';
   background-image: url(../images/slider-left-dec.jpg);
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
-  top: 60px;
-  width: 262px;
-  height: 625px;
-  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
+
 
 .main-banner:before {
   content: '';
